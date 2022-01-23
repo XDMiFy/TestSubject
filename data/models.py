@@ -6,3 +6,4 @@ class Enemy(models.Model):
     damage = models.IntegerField()
     HP = models.IntegerField()
     Speed = models.IntegerField()
+    avatar = models.ImageField(blank=True)

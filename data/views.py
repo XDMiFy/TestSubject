@@ -3,5 +3,11 @@ from data.models import Enemy
 
 def Enemies(request):
     allEnemies = Enemy.objects.all()
-    params = {"enemies": allEnemies}
-    return render(request, "allEnemies.html", params)
+    Aparams = {"enemies": allEnemies}
+    return render(request, "allEnemies.html", Aparams)
+
+def EnemyPage(request, name):
+    print(name)
+    params ={"name":"Boo", "avatar":"URL"}
+    return render(request, "enemy.html", params)
+

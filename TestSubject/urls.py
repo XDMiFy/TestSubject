@@ -8,5 +8,7 @@ from data import views as enemyviews
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', initialviews.HomePage),
-    path('enemy/', enemyviews.Enemies, name='enemy')
+    path('enemy/<str:name>', enemyviews.EnemyPage, name='enemy'),
+    path('allEnemies/', enemyviews.Enemies, name='enemies')
 ]
+
