@@ -19,6 +19,7 @@ class Migration(migrations.Migration):
                 ('damage', models.IntegerField()),
                 ('HP', models.IntegerField()),
                 ('Speed', models.IntegerField()),
+                ('Description', models.CharField(max_length=300)),
             ],
         ),
     ]
